@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Scrapbook Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="menu-header">
+                <h2>Menu</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">My Collections</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Shared With Me</a></li>
+                    <li><a href="#">Archived</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>My Memory Scrapbook Dashboard</h1>
+                <div class="nav-buttons">
+                    <button class="nav-btn active">Home</button>
+                    <button class="nav-btn">Profile</button>
+                    <button class="nav-btn">Logout</button>
+                </div>
+            </header>
+
+            <section class="scrapbooks-section">
+                <div class="section-header">
+                    <h2>My Scrapbooks</h2>
+                    <div class="view-toggle">
+                        <button class="toggle-btn active">Grid</button>
+                        <button class="toggle-btn">List</button>
+                    </div>
+                </div>
+
+                <div class="scrapbooks-grid">
+                    <!-- Scrapbook Card 1 -->
+                    <div class="scrapbook-card">
+                        <div class="card-image">
+                            <img src="/images/summer.png" alt="Summer Vacation 2024">
+                        </div>
+                        <div class="card-content">
+                            <h3>Summer Vacation 2024</h3>
+                            <p class="date">July 15, 2024</p>
+                            <div class="card-actions">
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrapbook Card 2 -->
+                    <div class="scrapbook-card">
+                        <div class="card-image">
+                            <img src="/images/family.avif" alt="Family Reunion">
+                        </div>
+                        <div class="card-content">
+                            <a href="union.html"><h3>Family Reunion</h3></a>
+                            <p class="date">August 5, 2024</p>
+                            <div class="card-actions">
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrapbook Card 3 -->
+                    <div class="scrapbook-card">
+                        <div class="card-image">
+                            <img src="/images/graduation.jpg" alt="Graduation Day">
+                        </div>
+                        <div class="card-content">
+                            <h3>Graduation Day</h3>
+                            <p class="date">May 20, 2024</p>
+                            <div class="card-actions">
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrapbook Card 4 -->
+                    <div class="scrapbook-card">
+                        <div class="card-image">
+                            <img src="/images/trip.jpg" alt="Road Trip Adventures">
+                        </div>
+                        <div class="card-content">
+                            <h3>Road Trip Adventures</h3>
+                            <p class="date">September 10, 2024</p>
+                            <div class="card-actions">
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrapbook Card 5 -->
+                    <div class="scrapbook-card">
+                        <div class="card-image">
+                            <img src="/images/holiday.jpg" alt="Holiday Memories">
+                        </div>
+                        <div class="card-content">
+                            <h3>Holiday Memories</h3>
+                            <p class="date">December 25, 2024</p>
+                            <div class="card-actions">
+                                <button class="action-btn edit">Edit</button>
+                                <button class="action-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Floating Action Button -->
+            <button class="fab">+</button>
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 | Memory Scrapbook | All rights reserved.</p>
+    </footer>
+</body>
+</html>
