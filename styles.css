@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    background-color: #F8C7CC;
+}
+.book{
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    position: relative;
+}
+.paper{
+    position:absolute;
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+    perspective: 1500px;
+}
+.front,.back{
+    background-color: beige;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    transform-origin: left;
+    transition: transform 0.5 s;
+    
+}
+img{
+    height:400px;
+    width:500px;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #A8CDC6;
+}
+.back-text{
+    transform:rotateY(180deg);
+}
+.back{
+    z-index: 0;
+}
+.front-text, .back-text{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20px;
+}
+button:focus{
+    outline:none;
+}
+button:hover i{
+    color: #fff9f5;
+}
+i {
+    font-size: 30px;
+}
+#p1{
+    z-index: 3;
+}
+#p2{
+    z-index: 2;
+}
+#p3{
+    z-index: 1;
+}
+.flipped .front,
+.flipped .back{
+    transform: rotateY(-180deg);
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 210px;
+    background-color: #a8d3c8;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu-header {
+    padding: 0 20px 20px;
+}
+
+.menu-header h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: #444;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #444;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu li.active a {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
